@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Application Page</title>
+     <meta charset="utf-8">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.3/jquery-ui.min.js"></script>
+    <script type='text/javascript' src='script.js'></script>
+    <style type="text/css">
+        .menu li {
+            list-style: none;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #000;
+            background-color: #C0C0C0;
+            width: 150px;
+        }
+    </style>
+</head>
+ 
+<body>
+    <form method="post" id="theform">
+        <p><strong><font size="5">Apply:</font></strong></p><br>
+        Student Number: <input type="text" name="sid"></input><br>
+        Job-ID: <input type="text" name="jobid"></input><br>
+        <input type="submit" name="add" value="Add"></input>
+    </form>
+    
+    <p>Rank the positions:</p>
+    <ul class="menu" id="sortable">
+    </ul>
+    <br>
+    <div id='display'></div>
+    <input type="button" id="bttn" name="submit" value="Submit"></input>
+</body>
+</html>
+
